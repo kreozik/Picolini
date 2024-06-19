@@ -9,6 +9,13 @@ body {
   
 }
 
+.pnum{
+    color: #ffdf9f;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
 .contact{
     color: #ffdf9f;
 
@@ -142,6 +149,7 @@ form input, form textarea {
     margin: 5px 0;
     border: 1px solid #013c3a;
     border-radius: 5px;
+    background-color: #013c3a;
 }
 
 form button {
@@ -213,12 +221,17 @@ footer {
     display: flex;
     justify-content: center;
     background-color: #004846;
+    padding-top: 40px;
+    margin-top: 10;
 }
 .menus{
     display: flex;
     justify-content: center;
     color: #004846;
     padding: 10px 20px;
+    margin-top: -50px;
+    
+    
     
 }
 
@@ -625,9 +638,21 @@ footer {
     margin-bottom: 16px;
 }
 #name{
-    border-color: #ffdf9f;
+    border-color: #013c3a;
+    color: #ffffff;
 }
 
+#weight{
+    color: #ffffff;
+}
+
+#phone{
+    color: white;
+}
+
+#message{
+    color: #ffffff;
+}
 
 /* history index */
 
@@ -732,6 +757,35 @@ body {
     color: #aaaaaa;
 }
 
+.analytics-href-1{
+    color: #F7A92C;
+    text-decoration: none;
+}
+
+.analytics-href-2{
+    color: #F7A92C;
+    text-decoration: none;
+}
+
+.analytics-href-3{
+    color: #F7A92C;
+    text-decoration: none;
+}
+
+.analytics-href-4{
+    color: #F7A92C;
+    text-decoration: none;
+}
+
+.analytics-href-5{
+    color: #F7A92C;
+    text-decoration: none;
+}
+
+.analytics-href-6{
+    color: #F7A92C;
+    text-decoration: none;
+}
 
 /* news */
 
@@ -777,4 +831,34 @@ body {
 .news-date {
     font-size: 0.8em;
     color: #aaaaaa;
+}
+
+.news-href-1{
+    color: #F7A92C;
+    text-decoration: none;
+}
+
+.news-href-2{
+    color: #F7A92C;
+    text-decoration: none;
+}
+
+.news-href-3{
+    color: #F7A92C;
+    text-decoration: none;
+}
+
+.news-href-4{
+    color: #F7A92C;
+    text-decoration: none;
+}
+
+.news-href-5{
+    color: #F7A92C;
+    text-decoration: none;
+}
+
+.news-href-6{
+    color: #F7A92C;
+    text-decoration: none;
 }
