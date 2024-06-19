@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слитки</title>
+   
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/poca12.svg" alt="Picolini">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="mergers.html">Слитки</a></li>
+                <li><a href="analytics.html">Аналитика</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="about.html">О компании</a></li>
+                
+            </ul>
+        </nav>
+        <div class="contact">
+            <a href="tel:88002220007">8 800 555 35 35</a>
+        </div>
+    </header>
+    <main>
+    <h1 class="slitok">Слитки</h1>    
+    <div class="chart">
+        <div class="chart-title">Динамика стоимости активов, 2014-2024 гг</div>   
+        <img class="chart-img" src="images/chart-desktop.svg" alt="">
+    </div>    
+    <div class="borderlands">
+            <div class="menus">
+                <button class="button" onclick="showSubmenu('gold', this)">Золото</button>
+                <button class="button" onclick="showSubmenu('platinum', this)">Платина</button>
+                <button class="button" onclick="showSubmenu('silver', this)">Серебро</button>
+                <button class="button" onclick="showSubmenu('palladium', this)">Палладий</button>
+            
+        </div>
+
+        <form id="gold" class="submenu" onsubmit="submitForm(event)">
+            <div class="options-container">
+                <div class="option">
+                    <input type="radio" name="option" id="gold1" value="1 - От 6.672,12₽">
+                    <label for="gold1">
+                        <img src="images/gold.png" alt="Ore">                        <div>
+                            <span>1 грамм</span>
+                            <span class="grayy">От 6.672,12₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="gold50" value="50 - От 333.606₽">
+                    <label for="gold50">
+                        <img src="images/gold.png" alt="Ore">                        <div>
+                            <span>50 грамм</span>
+                            <span class="grayy">От 333.606₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="gold100" value="100 - От 667.212₽">
+                    <label for="gold100">
+                        <img src="images/gold.png" alt="Ore">                        <div>
+                            <span>100 грамм</span>
+                            <span class="grayy">От 667.212₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="gold250" value="250 - От 1.668.030₽">
+                    <label for="gold250">
+                        <img src="images/gold.png" alt="Ore">                        <div>
+                            <span>250 грамм</span>
+                            <span class="grayy">От 1.668.030₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="gold500" value="500 - От 3.336.060₽">
+                    <label for="gold500">
+                        <img src="images/gold.png" alt="Ore">                        <div>
+                            <span>500 грамм</span>
+                            <span class="grayy">От 3.336.060₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="gold1000" value="1000 - От 6.672.120₽">
+                    <label for="gold1000">
+                        <img src="images/gold.png" alt="Ore">                        <div>
+                            <span>1000 грамм</span>
+                            <span class="grayy">От 6.672.120₽</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="penus">
+                <button type="submit" class="button">Купить</button>
+                <button type="submit" class="button">Продать</button>
+            </div>
+        </form>
+    
+        <form id="platinum" class="submenu" onsubmit="submitForm(event)">
+            <div class="options-container">
+                <div class="option">
+                    <input type="radio" name="option" id="platinum1" value="1 - От 2 717.00₽">
+                    <label for="platinum1">
+                        <img src="images/platina.png" alt="Ore">                        <div>
+                            <span>1 грамм</span>
+                            <span class="grayy">От 2 717.00₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="platinum50" value="50 - От 135.850₽">
+                    <label for="platinum50">
+                        <img src="images/platina.png" alt="Ore">                        <div>
+                            <span>50 грамм</span>
+                            <span class="grayy">От 135.850₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="platinum100" value="100 - От 27.170₽">
+                    <label for="platinum100">
+                        <img src="images/platina.png" alt="Ore">                        <div>
+                            <span>100 грамм</span>
+                            <span class="grayy">От 27.170₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="platinum250" value="250 - От 679.250₽">
+                    <label for="platinum250">
+                        <img src="images/platina.png" alt="Ore">                        <div>
+                            <span>250 грамм</span>
+                            <span class="grayy">От 679.250₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="platinum500" value="500 - От 1.358.500₽">
+                    <label for="platinum500">
+                        <img src="images/platina.png" alt="Ore">                        <div>
+                            <span>500 грамм</span>
+                            <span class="grayy">От 1.358.500₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="platinum1000" value="1000 - От 2.717.000₽">
+                    <label for="platinum1000">
+                        <img src="images/platina.png" alt="Ore">                        <div>
+                            <span>1000 грамм</span>
+                            <span class="grayy">От 2.717.000₽</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="penus">
+                <button type="submit" class="button">Купить</button>
+                <button type="submit" class="button">Продать</button>
+            </div>
+        </form>
+    
+        <form id="silver" class="submenu" onsubmit="submitForm(event)">
+            <div class="options-container">
+                <div class="option">
+                    <input type="radio" name="option" id="silver1" value="1 - От 83.63₽">
+                    <label for="silver1">
+                        <img src="images/silver.png" alt="Ore">                        <div>
+                            <span>1 грамм</span>
+                            <span class="grayy">От 83.63₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="silver5" value="50 - От 4.181,5₽">
+                    <label for="silver5">
+                        <img src="images/silver.png" alt="Ore">                        <div>
+                            <span>50 грамм</span>
+                            <span class="grayy">От 4.181,5₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="silver10" value="100 - От 8.363₽">
+                    <label for="silver10">
+                        <img src="images/silver.png" alt="Ore">                        <div>
+                            <span>100 грамм</span>
+                            <span class="grayy">От 8.363₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="silver250" value="250 - От 20.907,5₽">
+                    <label for="silver250">
+                        <img src="images/silver.png" alt="Ore">                        <div>
+                            <span>250 грамм</span>
+                            <span class="grayy">От 20.907,5₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="silver500" value="500 - От 41.815₽">
+                    <label for="silver500">
+                        <img src="images/silver.png" alt="Ore">                        <div>
+                            <span>500 грамм</span>
+                            <span class="grayy">От 41.815₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="silver1000" value="1000 - От 83.630₽">
+                    <label for="silver1000">
+                        <img src="images/silver.png" alt="Ore">                        <div>
+                            <span>1000 грамм</span>
+                            <span class="grayy">От 83.630₽</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="penus">
+                <button type="submit" class="button">Купить</button>
+                <button type="submit" class="button">Продать</button>
+            </div>
+        </form>
+    
+        <form id="palladium" class="submenu" onsubmit="submitForm(event)">
+            <div class="options-container">
+                <div class="option">
+                    <input type="radio" name="option" id="palladium1" value="1 - От 2 548.09₽">
+                    <label for="palladium1">
+                        <img src="images/palladiy.png" alt="Ore">                        <div>
+                            <span>1 грамм</span>
+                            <span class="grayy">От 2 548.09₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="palladium50" value="50 - От 127.404,5₽">
+                    <label for="palladium50">
+                        <img src="images/palladiy.png" alt="Ore">                        <div>
+                            <span>50 грамм</span>
+                            <span class="grayy">От 127.404,5₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="palladium100" value="100 - От 254.809₽">
+                    <label for="palladium100">
+                        <img src="images/palladiy.png" alt="Ore">                        <div>
+                            <span>100 грамм</span>
+                            <span class="grayy">От 254.809₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="palladium250" value="250 - От 637.022,5₽">
+                    <label for="palladium250">
+                        <img src="images/palladiy.png" alt="Ore">
+                        <div>
+                            <span>250 грамм</span>
+                            <span class="grayy">От 637.022,5₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="palladium500" value="500 - От 1.274.045₽">
+                    <label for="palladium500">
+                        <img src="images/palladiy.png" alt="Ore">
+                        <div>
+                            <span>500 грамм</span>
+                            <span class="grayy">От 1.274.045₽</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="option" id="palladium1000" value="1000 - От 2.548.090₽">
+                    <label for="palladium1000">
+                        <img src="images/palladiy.png" alt="Ore">                        <div>
+                            <span>1000 грамм</span>
+                            <span class="grayy">От 2.548.090₽</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="penus">
+                <button type="submit" class="button">Купить</button>
+                <button type="submit" class="button">Продать</button>
+            </div>
+        </form>
+    </div>    
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Заявка на бронирование слитков</h2>
+        <h2 id="modal-title"></h2>
+        <p>Заполните контактные данные и наш менеджер с вами свяжется</p>
+        <form id="modal-form" onsubmit="submitModalForm(event)">
+            <div>
+                <input type="text" id="weight" name="weight" placeholder="Вес" required>
+            </div>
+            <div>
+                <input type="text" id="name" name="name" placeholder="Имя" required>
+            </div>
+            <div>
+                <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+            </div>
+            <p>Нажимая кнопку отправить вы соглашаетесь с нашими условиями...</p>
+            <button type="submit" class="button">Отправить</button>
+        </form>
+    </div>
+</div>
+
+    <script>
+         function showSubmenu(id, button) {
+            // Скрыть все подменю
+            var submenus = document.querySelectorAll('.submenu');
+            submenus.forEach(function(menu) {
+                menu.style.display = 'none';
+            });
+            // Отобразить выбранное подменю
+            var submenu = document.getElementById(id);
+            if (submenu) {
+                submenu.style.display = 'block';
+            }
+
+            // Убрать активный класс со всех кнопок
+            var buttons = document.querySelectorAll('.button');
+            buttons.forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+
+            // Добавить активный класс к нажатой кнопке
+            button.classList.add('active');
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+            var form = event.target;
+            var selectedOption = form.querySelector('input[name="option"]:checked');
+            if (selectedOption) {
+                var action = event.submitter.textContent;
+                var value = selectedOption.value.replace("-", "грамм");
+                showModal(action, value);
+            } else {
+                alert("Пожалуйста, выберите опцию.");
+            }
+        }
+
+        function showModal(action, value) {
+            var modal = document.getElementById('modal');
+            if (modal) {
+                var modalTitle = document.getElementById('modal-title');
+                modalTitle.textContent = action + " - " + value;
+                modal.style.display = 'flex';
+            }
+        }
+
+        function closeModal() {
+            var modal = document.getElementById('modal');
+            if (modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        function submitModalForm(event) {
+            event.preventDefault();
+            var form = event.target;
+            var weight = form.weight.value;
+            var name = form.name.value;
+            var phone = form.phone.value;
+            alert("Заявка отправлена:\n" + "Вес: " + weight + "\nИмя: " + name + "\nТелефон: " + phone);
+            closeModal();
+        }
+
+        window.onclick = function (event) {
+            var modal = document.getElementById('modal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+
+    <section id="consultation">
+        <div id="firstt">
+        <h2 id="goldd">Получить консультацию персонального менеджера</h2>
+        <p>Напишите нам или оставьте заявку на обратный звонок.<br>
+            Наши менеджеры проконсультируют вас и предложат <br>
+            самые оптимальные варианты под ваши пожелания.
+        </p>
+    </div>
+        <form action="mailto:example@picolini.ru" method="post" id="formpod">
+            <div class="form-group">
+                <div>
+                    <input type="text" id="name" name="name" placeholder="Имя" required>
+                </div>
+                <div>
+                    <input type="text" id="phone" name="phone" placeholder="Телефон" required>
+                </div>
+            </div>
+                <textarea id="message" name="message" rows="8" placeholder="Комментарий" required></textarea>
+            <span class="politikaa">Нажимая кнопку «Отправить», я соглашаюсь с <a href="about.html" class="politika">условиями обработки данных</a> и <a href="about.html" class="politika">политикой конфеденциальности</a></span>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>   
+    </main>
+    <footer class="footer">
+        <div class="columns">
+            <div class="column">
+                <h3>Слитки</h3>
+                <a href="mergers.html">Купить слитки</a>
+                <a href="mergers.html">Продать слитки</a>
+            </div>
+            <div class="column">
+                <h3>Новости и аналитика</h3>
+                <a href="news.html">Новости рынка</a>
+                <a href="analytics.html">Аналитика</a>
+            </div>
+            <div class="column">
+                <h3>О компании</h3>
+                <a href="about.html">Контакты</a>
+                <a href="about.html">Команда</a>
+            </div>
+        </div>
+        <div class="contact">
+            <div>
+                <p><strong>Адрес</strong></p>
+                <p><a href="https://www.google.com/maps/search/%D0%B3.+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+%D1%83%D0%BB.+%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D0%B0,+%D0%B4.13,+%D1%81%D1%82%D1%80.6,+%D0%BF%D0%BE%D0%BC.4%2F1/@55.6109216,37.2076297,17z/data=!3m1!4b1?entry=ttu">г. Москва, ул. Пушкина, д.13, стр.6, пом.4/1</a></p>
+            </div>
+            <div>
+                <p><strong>Режим работы</strong></p>
+                <p><a href="https://time100.ru/">ПН-ПТ с 10:00 – 19:00</a></p>
+            </div>
+            <div>
+                <p><strong>Телефон</strong></p>
+                <p><a href="tel:88002220097">8 800 555 35 35</a></p>
+            </div>
+            <div>
+                <p><strong>E-mail</strong></p>
+                <p><a href="mailto:gold_support@picolini.ru">gold_support@picolini.ru</a></p>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
